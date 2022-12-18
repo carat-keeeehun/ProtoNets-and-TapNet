@@ -1,0 +1,22 @@
+data:
+    dataset: tieredImageNet
+    image_size: 84
+    image_channel: 3
+
+model:
+    name: tapnet
+    ckpt_dir: /home/keeeehun/source/meta/task3_5shot_tiered/model_best.pth
+
+training:
+    dimension: 512
+    lrdecay: True
+    lrstep: 40000
+    n_shot: 5
+    n_query: 8
+    n_query_test: 15
+    nb_class_train: 20
+    nb_class_test: 5
+
+optim:
+    lr_rate: 0.001
+    wd_rate: 0
